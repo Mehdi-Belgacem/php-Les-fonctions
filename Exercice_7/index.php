@@ -1,16 +1,14 @@
 <?php
-  $age = 19;
-  $gender = 'Femme' ;
-  function myFunction($gender, $age) {
-    if ($age >= 18 AND $gender == 'Homme') {
-      return 'Vous êtes un homme et vous êtes majeur';
-    }elseif ($age <= 18 AND $gender == 'Homme') {
-      return 'Vous êtes un homme et vous êtes mineur';
-    }elseif ($age >= 18 AND $gender == 'Femme') {
-      return 'Vous êtes une femme et vous êtes majeure';
-    }elseif ($age <= 18 AND $gender == 'Femme') {
-      return 'Vous êtes une femme et vous êtes mineure';
-    }
+  function identity($gender, $age) {
+    if ($age >= 18 && $gender == 'Homme') {
+      $message = 'Vous êtes un homme et vous êtes majeur';
+    }elseif ($age <= 18 && $gender == 'Homme') {
+      $message = 'Vous êtes un homme et vous êtes mineur';
+    }elseif ($age >= 18 && $gender == 'Femme') {
+      $message = 'Vous êtes une femme et vous êtes majeure';
+    }else {
+      $message = 'Vous êtes une femme et vous êtes mineure';
+    }return $message;
   }
 ?>
 <!DOCTYPE html>
@@ -22,6 +20,6 @@
 </head>
 <body>
   <h1>Partie 4 Exercice 7:</h1>
-  <p><?= myFunction($gender, $age);?></p>
+  <p><?= identity('Femme', 23);?></p>
 </body>
 </html>

@@ -1,8 +1,5 @@
 <?php
-  $lastName = 'Dupont';
-  $firstName = 'Jean' ;
-  $age = 45 ;
-  function myFunction($lastName, $firstName, $age) {
+  function identity($lastName, $firstName, $age) {
     return 'Bonjour ' . $lastName . ' ' . $firstName . ' , tu as ' . $age . ' ans.';
   }
 ?>
@@ -15,6 +12,6 @@
 </head>
 <body>
   <h1>Partie 4 Exercice 6:</h1>
-  <p><?= myFunction($lastName, $firstName, $age) ?></p>
+  <p><?= identity('Dupont', 'Jean', 45) ?></p>
 </body>
 </html>

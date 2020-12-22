@@ -1,6 +1,6 @@
 <?php
-  $name = 'Bonjour, Jean comment vas tu?';
-    function myFunction($name){
+  $name = 'Bonjour, Jean comment vas tu ?';
+    function printMessage($name){ // function printMessage(string $message)
       return $name;
     }
   ?>
@@ -13,6 +13,6 @@
 </head>
 <body>
   <h1>Partie 4 Exercice 2:</h1>
-    <p><?= myFunction($name); ?></p>
+    <p><?= printMessage($name); ?></p>
 </body>
 </html>

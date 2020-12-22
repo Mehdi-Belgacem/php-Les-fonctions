@@ -1,8 +1,8 @@
 <?php
   $message = 'Bonjour';
-  $name = 'Mehdi';
-  function myFunction($message, $name){
-    return $message . ' ' . $name ;
+  $name = ' Mehdi';
+  function myFunction($firstSentence, $secondSentence){
+    return $firstSentence . $secondSentence ;
   }
 ?>
 <!DOCTYPE html>

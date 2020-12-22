@@ -1,5 +1,5 @@
 <?php
-    function myFunction(){
+    function returnTrue(){
       return true;
     }
   ?>
@@ -12,6 +12,6 @@
 </head>
 <body>
   <h1>Partie 4 Exercice 1:</h1>
-    <p><?= myFunction() ?></p>
+    <p><?= returnTrue() ?></p>
 </body>
 </html>

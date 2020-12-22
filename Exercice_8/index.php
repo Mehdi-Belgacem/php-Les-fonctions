@@ -1,8 +1,5 @@
 <?php
-  $firstNumber = 7 ;
-  $secondNumber = 3 ;
-  $numberThird = 12 ;
-  function myFunction($firstNumber, $secondNumber, $numberThird) {
+  function numbers($firstNumber = 23567, $secondNumber = 22456, $numberThird = 1222) {
     return $firstNumber + $secondNumber + $numberThird;
   }
 ?>
@@ -15,6 +12,6 @@
 </head>
 <body>
   <h1>Partie 4 Exercice 8:</h1>
-  <p><?= myFunction($firstNumber, $secondNumber, $numberThird); ?></p>
+  <p><?= numbers(); ?></p>
 </body>
 </html>
